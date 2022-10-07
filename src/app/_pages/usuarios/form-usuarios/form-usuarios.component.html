@@ -1,0 +1,37 @@
+<form fxLayout="column" [formGroup]="formGroup">
+  <p>Nuevo Usuario</p>
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input type="text" matInput formControlName="nombre" required />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Apellido</mat-label>
+    <input type="text" matInput formControlName="apellido" required />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Direccion</mat-label>
+    <input type="text" matInput formControlName="direccion" required />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Provincia</mat-label>
+    <input type="text" matInput formControlName="provincia" required />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Distrito</mat-label>
+    <input type="text" matInput formControlName="distrito" required />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Wallet</mat-label>
+    <input type="text" matInput formControlName="wallet" required />
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    type="button"
+    [disabled]="formGroup.invalid"
+    (click)="enviar()"
+  >
+    Crear
+  </button>
+</form>
