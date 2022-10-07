@@ -16,12 +16,12 @@ export class FormVehiculosComponent implements OnInit {
 
   loadForm() {
     this.formGroup = new FormGroup({
-      nombre: new FormControl(null, [Validators.required]),
-      apellido: new FormControl(null, [Validators.required]),
-      direccion: new FormControl(null, [Validators.required]),
-      provincia: new FormControl(null, [Validators.required]),
-      distrito: new FormControl(null, [Validators.required]),
-      wallet: new FormControl(null, [Validators.required]),
+      marca: new FormControl(null, [Validators.required]),
+      modelo: new FormControl(null, [Validators.required]),
+      tipo: new FormControl(null, [Validators.required]),
+      color: new FormControl(null, [Validators.required]),
+      vin: new FormControl(null, [Validators.required]),
+      walletprop: new FormControl(null, [Validators.required]),
     });
   }
 
