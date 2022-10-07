@@ -1,1 +1,46 @@
-<p>compraventa works!</p>
+<div
+  fxLayout
+  fxLayout.lt-sm="column"
+  fxLayoutAlign="space-around"
+  class="container"
+>
+  <div
+    fxLayout="column"
+    fxLayoutAlign="start"
+    fxFlex="1 1 30%"
+    fxFlex.lt-md="1 1 50%"
+    fxFlex.lt-sm="1 1 100%"
+  >
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> NameWallet </mat-panel-title>
+          <mat-panel-description> General </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Complete informacion</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> NameWallet </mat-panel-title>
+          <mat-panel-description> General </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Complete informacion</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <div
+    fxLayout
+    fxFlex="1 1 30%"
+    fxFlex.lt-md="1 1 50%"
+    fxFlex.lt-sm="1 1 100%"
+    fxLayoutAlign="center center"
+  >
+    <app-form-compra-venta></app-form-compra-venta>
+  </div>
+</div>

@@ -13,6 +13,8 @@ import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormUsuariosComponent } from './_pages/usuarios/form-usuarios/form-usuarios.component';
+import { FormVehiculosComponent } from './_pages/vehiculos/form-vehiculos/form-vehiculos.component';
+import { FormCompraVentaComponent } from './_pages/compraventa/form-compra-venta/form-compra-venta.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FormUsuariosComponent } from './_pages/usuarios/form-usuarios/form-usua
     CompraventaComponent,
     LayoutComponent,
     FormUsuariosComponent,
+    FormVehiculosComponent,
+    FormCompraVentaComponent,
   ],
   imports: [
     BrowserModule,
