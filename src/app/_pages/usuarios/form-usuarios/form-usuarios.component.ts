@@ -16,12 +16,12 @@ export class FormUsuariosComponent implements OnInit {
 
   loadForm() {
     this.formGroup = new FormGroup({
-      nombre: new FormControl(null, [Validators.required, Validators.email]),
-      apellido: new FormControl(null, [Validators.required, Validators.email]),
-      direccion: new FormControl(null, [Validators.required, Validators.email]),
-      provincia: new FormControl(null, [Validators.required, Validators.email]),
-      distrito: new FormControl(null, [Validators.required, Validators.email]),
-      wallet: new FormControl(null, [Validators.required, Validators.email]),
+      nombre: new FormControl(null, [Validators.required]),
+      apellido: new FormControl(null, [Validators.required]),
+      direccion: new FormControl(null, [Validators.required]),
+      provincia: new FormControl(null, [Validators.required]),
+      distrito: new FormControl(null, [Validators.required]),
+      wallet: new FormControl(null, [Validators.required]),
     });
   }
 
